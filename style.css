@@ -30,9 +30,9 @@ strong {
 }
 
 .conteudo {
-   background-color: #000000;
+   background-color: #fff;
    font-family: 'Inter';
-   color:#fff;
+   color:#000000;
    text-align: justify;
    padding:20px 70px 20px 70px;
 }
@@ -52,6 +52,22 @@ strong {
    width: 7%;
    float: justify;
  }
+
+.download {
+   font-family: 'Inter';
+   font-size: 18px;
+   width: 25%;
+   background-color: #5F9EA0;
+   color: #fff;
+   border: none;
+   border-radius: 30px;
+   padding: 10px;
+   transition: 0.5s;
+}
+
+.download:hover {
+   background-color: #008080;
+}
 
 .footer-container{
     position: relative;
