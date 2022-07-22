@@ -30,9 +30,9 @@ strong {
 }
 
 .conteudo {
-   background-color: #fff;
+   background-color: #000000;
    font-family: 'Inter';
-   color:#000000;
+   color:#fff;
    text-align: justify;
    padding:20px 70px 20px 70px;
 }
@@ -69,6 +69,18 @@ strong {
    background-color: #008080;
 }
 
+.print {
+   width: 70%;
+
+}
+
+.imageblock {
+   text-align: center;
+}
+.legenda {
+   text-align: center;
+   font-size: 15px;
+}
 .footer-container{
     position: relative;
     background-color: #000000;

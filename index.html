@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
-		<title>CMUG - Como utilizar o Git via GitHub</title>
+		<title>CMUG - Como Utilizar o Git e o GitHub</title>
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -26,11 +26,11 @@
 				  </li>
 				  <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					  Redes sociais
+					  O desenvolvedor
 					</a>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					  <li><a class="dropdown-item" href="#">LinkedIn</a></li>
-					  <li><a class="dropdown-item" href="#">GitHub</a></li>
+					  <li><a class="dropdown-item" href="https://linkedin.com/in/fernandosoaresf" target="_blank">LinkedIn</a></li>
+					  <li><a class="dropdown-item" href="https://github.com/fernandosoaresf" target="_blank">GitHub</a></li>
 					</ul>
 				  </li>
 				  <li class="nav-item">
@@ -142,39 +142,118 @@
 			</p>
 
 			<h5 class="titulo-texto">Na prática</h5>
-			<p>Dado os conceitos e comandos agora é a hora ensinar a como funciona tudo na prática. Primeiramente é necessário baixar e instalar o Git na máquina.</p>
-			<p>Clique no botão abaixo para ser redirecionado para a página de download do Git e <a href=https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git target="_blank">veja como instalá-lo</a>
+			
+			<p>Dado os conceitos e comandos agora é a hora ensinar a como funciona tudo na prática. Primeiramente é necessário baixar e instalar o Git na máquina. Clique no botão abaixo para ser redirecionado para a página de download do Git e <a href=https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git target="_blank">veja como instalá-lo</a>
 			de acordo com o seu sistema operacional.</p>
 			
 			<a href="https://git-scm.com/" target="_blank"><button class="download">Download Git</button></a>
 
+
 			<p>"Agora que baixei o Git, é só dar <strong>git init</strong> no editor de códigos para subir tudo no GitHub, certo?" Errado! Você deve criar uma conta no GitHub para fazer os seus <strong>repositórios</strong>.
 				Para isso, você deve ir no <a href="https://github.com/">GitHub</a>, clicar em "Sign Up" e seguir as instruções para concluir sua conta.</p>
 
+			
 			<h5 class="titulo-texto">Criando um repositório</h5>	
 
 			<p>Depois de ter criado uma conta no GitHub, você pode criar respositórios para salvar seus projetos. Para tal, localize o botão "create a new repository" na tela inicial.</p>
-			<img class="pagina1" src="imgs/paginainicial.png">
-			<img class="paginacrop" src="imgs/crop-paginainicial.png">
-			<img class="pagina2" src="imgs/pagina2.png">
-			<img class="pagina3" src="imgs/pagina3.png">
+			
+			<div class="imageblock">
+				<img class="print" src="imgs/paginainicial.png">
+					<p class="legenda">Página inicial do desenvolvedor no GitHub.</p>
+				<img class="paginacrop" src="imgs/crop-paginainicial.png">
+					<p class="legenda">Clique em "create a new repository".</p>
+				<img class="print" src="imgs/pagina2.png">
+					<p class="legenda">Preencha o nome do repositório, dê uma descrição do seu projeto e desmarque o arquivo readme para não gerar erros de sincronização (pode ser colocado posteriormente).</p>
+				<img class="print" src="imgs/pagina3.png">
+					<p class="legenda">Repositório criado, agora é hora de fazer seus <strong>commits</strong>.</p>
+			</div>
 
-			</section>
+			<h5 class="titulo-texto">Fazendo um commit</h5>
 
+			<p>A primeira coisa que você deve fazer ao instalar Git é configurar seu nome de usuário e endereço de e-mail. Isto é importante porque cada commit usa esta informação, e ela é carimbada de forma imutável nos commits que você começa a criar. Abra o terminal e digite o comando:</p>
+			<p><strong>config --global user.name "Fulano de Tal"</strong> e <strong>config --global user.email fulanodetal@exemplo.br</strong></p>
+
+			<p>Para testar seus comandos, use: git config --list</p>
+
+			<div class="imageblock">
+				<img class="print" src="imgs/pagina4.png">
+					<p class="legenda">Copie o link do repositório que você criou.</p>
+				<img class="print" src="imgs/pagina5.png">
+					<p class="legenda">Agora é hora de utilizar os comandos que aprendemos lá no dicionário. Abra o terminal e use os comandos para fazer o seu primeiro commit.</p> 
+			</div>
+
+				<ol>
+					<li class="dic">
+						<p>Utilize <strong>git init</strong> para iniciar um repositório git dentro do seu projeto. 
+						E nele, ficarão registradas as informações relacionadas ao controle do versionamento.
+						</p>
+					</li>
+					<li class="dic">
+						<p>Utilize <strong>git add .</strong> para adicionar os arquivos ao primeiro commit.</p>
+					</li>
+					<li class="dic">
+						<p>Use o comando <strong>git status</strong> para verificar se os arquivos foram indexados.</p>
+					</li>
+					<li class="dic">
+						<p>Agora que os arquivos foram indexados, utilize <strong>git commit -m "first commit"</strong>.</p>
+					</li>
+					<li class="dic">
+						<p>Você pode usar o <strong>git log</strong> para visualizar o que vem sendo feito em uma determinada branch ou avaliar as alterações de um arquivo em especial.</p>
+					</li>
+					<li class="dic">
+						<p>Use o comando <strong>git remote add origin (link do repositório no GitHub)</strong> para encaminhar seus commits para o repositório remoto.</p>
+					</li>
+					<li class="dic">
+						<p>Por fim: utilize <strong>git push -u origin master</strong> para subir seus arquivos.</p>
+					</li>
+				</ol> 
+			
+			<div class="imageblock">
+				<img class="print" src="imgs/pagina6.png">
+					<p class="legenda">Parabéns, seu primeiro commit foi feito! &#127881;</p>
+			</div>
+
+			<h5 class="titulo-texto">Fazendo modificações e commits</h5>
+			<p>Abra o terminal para subir suas modificações e novas versões no repositório remoto.</p>
+			
+			<div class="imageblock">
+				<img class="print" src="imgs/pagina7.png">
+					<p class="legenda">Siga as instruções para subir uma nova versão do seu projeto.</p>
+			</div>
+		
+			<ol>
+				<li class="dic">
+					<p>Utilize <strong>git add .</strong> para adicionar os arquivos com modificações.</p>
+				</li>
+				<li class="dic">
+					<p>Agora que os arquivos foram indexados, utilize <strong>git commit -am "nome da modificação"</strong>.</p>
+				</li>
+				<li class="dic">
+					<p>Por fim: utilize <strong>git push -u origin master</strong> para subir seus arquivos.</p>
+				</li>
+			</ol>
+
+			<div class="imageblock">
+				<img class="print" src="imgs/pagina8.png">
+					<p class="legenda">Suas modificações estarão salvas contando os números de commits e últimas modificações no seu repositório do GitHub.</p>
+			</div>
+
+			<p>Existem vários outros recursos importantes para conhecer e utilizar no GitHub, como branchs, que são versões paralelas do seu código que facilitam a criação de novas funcionalidades ou correções de bugs sem prejudicar o código-fonte original, e pull requests, que são “chamados” à comunidade para correção ou implementação de novos recursos em projetos.
+				Além disso, a plataforma é muito versátil e prática de se usar. Go, devs! &#128640;
+			</p>
+
+			<p>Informações: <a href="github.com">Github</a> / <a href="https://tecnoblog.net/responde/como-usar-o-github-guia-para-iniciantes/">TecnoBlog</a> / <a href="https://git-scm.com/">Git</a></p>
+
+		</section>
 	</main>
 
 
 	<footer class="footer-container">
 
 		<div class="footer-content-1">
-			<p class="footer-p">
-				<a href="index.html">Home</a>
-				<a href="#">Redes sociais</a>
-				<a href="contato.html">Contato</a>
-			</p>
-				<img src="#" alt="">
+				<img src="imgs/nandodev.png" alt="">
 				<p class="footer-empresa">
-				-
+				Como utilizar o Git e o GitHub.
 				</p>
 		</div>
 
@@ -200,12 +279,12 @@
 		<div class="footer-content-3">
 			<p class="footer-empresa">
 				<span>Sobre o desenvolvedor</span>
-				-
+				Fernando é Técnico em Informática pelo IFRN e desenvolvedor front-end, atuando com HTML, CSS e JavaScript.
 			</p>
 			<div class="footer-icons">
-				<a href="https://github.com/fernandosoaresf"><img src="imgs/githublogo.png" class="fa fa-github"></i></a>
+				<a href="https://github.com/fernandosoaresf" target="_blank"><img src="imgs/githublogo.png" class="fa fa-github"></i></a>
 				<a href="#"><img src="imgs/instalogo.png" class="fa fa-instagram"></i></a>
-				<a href="linkedin.com/in/fernandosoaresf/"><img src="imgs/linkedinlogo.png" class="fa fa-linkedin"></i></a>
+				<a href="linkedin.com/in/fernandosoaresf/" target="_blank"><img src="imgs/linkedinlogo.png" class="fa fa-linkedin"></i></a>
 			</div>
 		</div>
 				
